@@ -1,43 +1,40 @@
-📋 Sistema de Gerenciamento Ágil de Tarefas - TechFlow Solutions
+# 📋 Sistema de Gerenciamento Ágil de Tarefas - TechFlow Solutions
 
-📌 Visão Geral
-Sistema de gerenciamento de tarefas desenvolvido para startups de logística, implementando metodologias ágeis com Python e Flask. O projeto inclui:
+![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)
+![GitHub License](https://img.shields.io/github/license/Ailton2301/techflow-python)
+![GitHub Issues](https://img.shields.io/github/issues/Ailton2301/techflow-python)
 
-CRUD completo de tarefas com priorização
+## 📌 Visão Geral
+Sistema de gerenciamento de tarefas para startups de logística, desenvolvido com:
+- **Backend**: Python + Flask
+- **Metodologias Ágeis**: Kanban integrado via GitHub Projects
+- **CI/CD**: GitHub Actions
+- **Testes**: Pytest
 
-Autenticação básica de usuários
+## 🚀 Começando
 
-Quadro Kanban integrado (GitHub Projects)
+### Pré-requisitos
+- Python 3.10+
+- Git
+- Conta no GitHub
 
-Pipeline CI/CD com GitHub Actions
-
-Testes automatizados com pytest
-
-🚀 Começando
-Pré-requisitos
-Python 3.10+
-
-Git
-
-Conta no GitHub
-
-Instalação
-bash
+### Instalação
+```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/techflow-python.git
+git clone https://github.com/Ailton2301/techflow-python.git
 cd techflow-python
 
-# Crie e ative o ambiente virtual
+# Ambiente virtual
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 .\venv\Scripts\activate   # Windows
 
 # Instale as dependências
 pip install -r requirements.txt
-Executando a Aplicação
+Execução
 bash
 flask run
-A API estará disponível em http://localhost:5000
+Acesse: http://localhost:5000
 
 📚 Documentação da API
 Autenticação
@@ -49,61 +46,48 @@ json
   "password": "admin123"
 }
 Tarefas
-GET /api/tasks - Lista todas as tarefas
-
-POST /api/tasks - Cria nova tarefa
-
-json
-{
-  "titulo": "Revisar contrato",
-  "descricao": "Verificar cláusulas de entrega",
-  "prioridade": "alta"
-}
-PUT /api/tasks/<id> - Atualiza tarefa
-
-DELETE /api/tasks/<id> - Remove tarefa
-
+Método	Endpoint	Descrição
+GET	/api/tasks	Lista todas as tarefas
+POST	/api/tasks	Cria nova tarefa
+PUT	/api/tasks/id	Atualiza tarefa
+DELETE	/api/tasks/id	Remove tarefa
 🧪 Testes
-Execute todos os testes:
-
 bash
 pytest -v
 🛠️ Tecnologias
 Backend: Python + Flask
 
-Testes: pytest
+Testes: Pytest
 
 CI/CD: GitHub Actions
 
-Documentação: Swagger (Futura implementação)
+Documentação: Swagger (futuro)
 
-📊 Estrutura do Código
+📊 Estrutura
 text
 src/
-├── app.py                # Aplicação principal
-├── models.py             # Modelos de dados
+├── app.py          # Aplicação principal
+├── models.py       # Modelos de dados
 └── routes/
-    ├── tasks.py          # Endpoints de tarefas
-    └── auth.py           # Endpoints de autenticação
-tests/
-├── test_models.py        # Testes de modelos
-├── test_tasks.py         # Testes de tarefas
-└── test_auth.py          # Testes de autenticação
+    ├── tasks.py    # Endpoints de tarefas
+    └── auth.py     # Autenticação
+tests/              # Testes automatizados
 🤝 Contribuição
-Faça um fork do projeto
+Faça um fork
 
 Crie sua branch (git checkout -b feature/nova-feature)
 
-Commit suas mudanças (git commit -m 'Adiciona nova feature')
+Commit (git commit -m 'Add feature')
 
-Push para a branch (git push origin feature/nova-feature)
+Push (git push origin feature)
 
 Abra um Pull Request
 
-
 ✉️ Contato
-[Ailton Resende] - [silvaailton578@gmail.com]
-[www.linkedin.com/in/ailton-resende-8a4815199]
+Ailton Resende
 
-Nota: Este projeto foi desenvolvido como parte da disciplina de Engenharia de Software da [UNIFECAF].
+Email: silvaailton578@gmail.com
 
+LinkedIn: linkedin.com/in/ailton-resende
+
+Nota: Projeto desenvolvido para a disciplina de Engenharia de Software da [UNIFECAF].
